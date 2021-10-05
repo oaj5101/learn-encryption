@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="types of encryption algorithms. Tagged with encryption, algorithms, programming, career.">
+    <meta name="keywords"
+        content=" AES, encryption, algorithms, programming, career, software, coding, development, engineering, inclusive, community">
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Types of Algorithms" />
+    <title>Learn Encryption</title>
+    <link rel="short icon" href="youthedesigner.ico">
+    <link rel="stylesheet" href="InternTempCSSv2.css">
+    <link rel="stylesheet" href="responsive1.css">
+    <link rel="stylesheet" href="home.css">
+
+    <script>
+        function openNav() {
+            // document.getElementById("sidenav").style.display = 'flex';
+            document.getElementById("dsply").style.width = "71vw";
+            document.getElementById("imga").style.width = "79vw";
+            document.getElementById("sidenav").style.width = '19vw';
+        }
+        function closeNav() {
+            // document.getElementById("sidenav").style.display = 'none';
+            document.getElementById("sidenav").style.width = '0';
+            document.getElementById("dsply").style.width = "91vw";
+            document.getElementById("imga").style.width = "98vw";
+        }
+        function navButn()
+        {
+            if(document.getElementById("dsply").style.width ==="71vw")
+            {
+                console.log("if");
+                closeNav();
+                document.getElementById("navbutton").innerHTML = "&equals;";
+            }
+            else if(document.getElementById("dsply").style.width === "91vw")
+            {
+                console.log("else if");
+                openNav();
+                document.getElementById("navbutton").innerHTML = "&times;";
+            }
+            else{
+            console.log("error")
+            openNav();
+            document.getElementById("navbutton").innerHTML = "&times";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+  <!-- colleagues top navbar -->
+        <nav id="navv" class="navigation h-nav" style="height:10vh">
+            <div class="logo nav-logo v-class">
+                <img class="logoimg" src="youthedesigner.png" alt="">
+            </div>
+          <ul class="nav-list v-class">
+            <li><a href="home2.html">Home</a></li>
+            <li><a href="AES.html">Learn Algorithm</a></li>
+        <!--   <li><a href="about">About</a></li>
+            <li><a href="#">Blog</a></li>-->
+          </ul>
+          <div class="burger" onclick="menuu()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+        </nav>
+  <!-- my placeholder top navbar -->
+
+        <!-- <div class="navbar">
+            <ul>
+                <li>ICON</li>
+                <li>HOME</li>
+                <li>ABOUT</li>
+                <li>CONTACT</li>
+            </ul>
+        </div> -->
+        <!-- second nav bar starts -->
+        <div class="nav">
+            <div class="drop">
+                <!-- dropdown menu for mobile site -->
+                <li id="btn" class="dropbtn">ENCYRPTION TECHNIQUES <i class="arrow"></i>
+                    <div class="dropcontent">
+                        <a href="AES.html">AES</a>
+                        <a href="FPE.html">FPE</a>
+                        <a href="DesTdes.html">DES/TDES</a>
+                        <a href="Blowfish.html">BLOWFISH</a>
+                        <a href="Twofish.html">TWOFISH</a>
+                        <a href="RSA.html">RSA</a>
+                        <a href="sha.html">SHA</a>
+                    </div>
+                </li>
+                <!-- dropdown ends -->
+            </div>
+            <ul style=" list-style-type: none;">
+                <li id="navbutton" onclick="navButn()">&equals;</li>
+                <a href="AES.html"><li>AES</li></a>
+                <a href="FPE.html"><li>FPE</li></a>
+                <a href="DesTdes.html"><li>DES/TDES</li></a>
+                <a href="Blowfish.html"><li>BLOWFISH</li></a>
+                <a href="Twofish.html"><li>TWOFISH</li></a>
+                <a href="RSA.html"><li>RSA</li></a>
+                <a href="sha.html"><li>SHA</li></a>
+            </ul>
+        </div>
+    </header>
+
+    <div>
+        <div class="container">
+            <!-- side navigator -->
+            <div class="navtab" id="sidenav">
+                <div class="head">
+                    <h2 id="closenav" onclick="closeNav()">A E S</h2>
+                </div>
+                <ul style=" list-style-type: none; padding-top: 2vh;">
+                    <li><a href="#1">Features Of AES</a></li>
+                    <li><a href="#2">Operation of AES</a></li>
+                    <li><a href="#3">Schematic of AES Structure</a></li>
+                    <li><a href="#4">Encryption Process</a></li>
+                    <li><a href="#5">Shift rows</a></li>
+                    <li><a href="#6">Mix Columns</a></li>
+                    <li><a href="#7">Add round key</a></li>
+                    <li><a href="#8">Decryption Process</a></li>
+                    <li><a href="#9">AES Analysis</a></li>
+                    <li><a href="#top">BACK TO TOP</a></li>
+                </ul>
+
+            </div>
+            <!-- side navigator ends -->
+            <!-- main content starts -->
+            <div class="area">
+                <div class="heading" id="imga">
+                    <h1>&nbsp;&nbsp;Advanced Encryption Standard (AES)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
+                </div>
+                <div class="content" id="dsply">
+                    <h3 id="1">Description:</h3>
+                    <p>The more popular and widely adopted symmetric algorithm encryption likely to be encountered is
+                        the advanced encryption standard.It is found at least six times faster than TDES. A replacement
+                        for DES was needed as its key size was too small.</p>
+                    <h2>Features Of AES:-</h2>
+                    <ul class="ConList">
+                        <li>Symmetric key symmetric block cipher</li>
+                        <li>128 bit data,128/192/256-bit keys</li>
+                        <li>Stronger and faster than triple DES</li>
+                        <li>Provide full specification and design details</li>
+                        <li>Software implementable in C and Java</li>
+                        <li>Security. Competing algorithms were to be judged on their ability to resist attack -- as
+                            compared to other submitted ciphers. Security strength was to be considered the most
+                            important factor in the competition.</li>
+                        <li id="2">Cost. Intended to be released on a global, nonexclusive and royalty-free basis, the
+                            candidate algorithms were to be evaluated on computational and memory efficiency</li>
+                        <li>Implementation. Factors to be considered included the algorithm's flexibility, suitability
+                            for hardware or software implementation, and overall simplicity.</li>
+                    </ul>
+                    <h2>Operation of AES:-</h2>
+                    <p>AES is an iterative rather than Feistel cipher. It is based on the ‘substitution–permutation
+                        network’. It comprises a series of linked operations,
+
+                        some of which involve replacing inputs by specific outputs (substitutions) and others involve
+                        shuffling bits around (permutations).
+                        Interestingly, AES performs all its computations on bytes rather than bits. Hence, AES treats
+                        the 128 bits of a plaintext block as 16 bytes. These 16 bytes are arranged in four columns and
+                        four rows for processing as a matrix.</p>
+                    <p id="3"></p>
+                    <p>
+                        Unlike DES, the number of rounds in AES is variable and depends on the length of the key. AES
+                        uses 10 rounds for 128-bit keys, 12 rounds for 192-bit keys and 14 rounds for 256-bit keys. Each
+                        of these rounds uses a different 128-bit round key, which is calculated from the original AES
+                        key.</p>
+
+                    <h2 id="4">Schematic of AES Structure</h2>
+                    <h3>Encryption Process:-</h3>
+                    <p id="5"> Byte Substitution (SubBytes);-<br><br>
+                        The 16 input bytes are substituted by looking up a fixed table (S-box) given in design. The
+                        result is in a matrix of four rows and four columns.
+                    </p>
+                    <h3>Shift rows:-</h3>
+                    <ul class="ConList">
+                        <li>First row is not shifted.
+                        </li>
+                        <li>Second row is shifted one (byte) position to the left</li>
+                        <li>Third row is shifted two positions to the left.</li>
+                        <li id="6">Fourth row is shifted three positions to the left.</li>
+                        <li>The result is a new matrix consisting of the same 16 bytes but shifted with respect to each
+                            other.</li>
+                    </ul>
+                    <h3>Mix Columns</h3>
+                    <p id="7">Each column of four bytes is now transformed using a special mathematical function. This
+                        function takes as input the four bytes of one column and outputs four completely new bytes,
+                        which replace the original column. The result is another new matrix consisting of 16 new bytes.
+                        It should be noted that this step is not performed in the last round.</p>
+                    <h3>Add roundkey</h3>
+                    <p id="8">The 16 bytes of the matrix are now considered as 128 bits and are XORed to the 128 bits of
+                        the round key. If this is the last round then the output is the ciphertext. Otherwise, the
+                        resulting 128 bits are interpreted as 16 bytes and we begin another similar round.</p>
+                    <h3>Decryption Process</h3>
+                    <p>The process of decryption of an AES ciphertext is similar to the encryption process in the
+                        reverse order. Each round consists of the four processes conducted in the reverse order −</p>
+                    <ul class="ConList">
+                        <li>Add round key</li>
+                        <li>Mix columns</li>
+                        <li>Shift rows</li>
+                        <li>Byte substitution</li>
+                        <li id="9">Since sub-processes in each round are in reverse manner, unlike for a Feistel Cipher,
+                            the encryption and decryption algorithms need to be separately implemented, although they
+                            are very closely related</li>
+                    </ul>
+                    <h2>AES Analysis</h2>
+                    <ul class="ConList">
+                        <li>In present day cryptography, AES is widely adopted and supported in both hardware and
+                            software. Till date, no practical cryptanalytic attacks against AES have been discovered.
+                            Additionally, AES has built-in flexibility of key length, which allows a degree of
+                            ‘future-proofing’ against progress in the ability to perform exhaustive key searches.</li>
+                        <li>However, just as for DES, the AES security is assured only if it is correctly implemented
+                            and good key management is employed.</li>
+                        <li>AES-128 uses a 128-bit key length to encrypt and decrypt a block of messages, while AES-192
+                            uses a 192-bit key length and AES-256 a 256-bit key length to encrypt and decrypt messages.
+                            Each cipher encrypts and decrypts data in blocks of 128 bits using cryptographic keys of
+                            128, 192 and 256 bits, respectively.</li>
+                        <li>Symmetric, also known as secret key, ciphers use the same key for encrypting and decrypting,
+                            so the sender and the receiver must both know -- and use -- the same secret key. The
+                            government classifies information in three categories: Confidential, Secret or Top Secret.
+                            All key lengths can be used to protect the Confidential and Secret level. Top Secret
+                            information requires either 192- or 256-bit key lengths.</li>
+                        <li>There are 10 rounds for 128-bit keys, 12 rounds for 192-bit keys and 14 rounds for 256-bit
+                            keys. A round consists of several processing steps that include substitution, transposition
+                            and mixing of the input plaintext to transform it into the final output of ciphertext</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- main content ends -->
+        </div>
+    </div>
+    <footer class="foot">
+        <ul>
+            <li><a href="home2.html">Home</a></li>
+            <li><a href="AES.html">Learn Algorithm</a></li>
+           <!---<li><a href="#">About</a></li>
+            <li><a href="#">Blog</a></li>--> 
+        </ul>
+        <p class="footend">LearnEncryption &copy; 2021 </p>
+      </footer> 
+      <script src="home.js"></script>
+</body>
+</html>

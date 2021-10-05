@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="types of encryption algorithms. Tagged with encryption, algorithms, programming, career.">
+    <meta name="keywords"
+        content=" AES, encryption, algorithms, programming, career, software, coding, development, engineering, inclusive, community">
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Types of Algorithms" />
+    <title>Learn Encryption</title>
+    <link rel="short icon" href="youthedesigner.ico">
+    <link rel="stylesheet" href="InternTempCSSv2.css">
+    <link rel="stylesheet" href="responsive1.css">
+    <link rel="stylesheet" href="home.css">
+
+    <script>
+        function openNav() {
+            // document.getElementById("sidenav").style.display = 'flex';
+            document.getElementById("dsply").style.width = "71vw";
+            document.getElementById("imga").style.width = "79vw";
+            document.getElementById("sidenav").style.width = '19vw';
+        }
+        function closeNav() {
+            // document.getElementById("sidenav").style.display = 'none';
+            document.getElementById("sidenav").style.width = '0';
+            document.getElementById("dsply").style.width = "91vw";
+            document.getElementById("imga").style.width = "98vw";
+        }
+        function navButn()
+        {
+            if(document.getElementById("dsply").style.width ==="71vw")
+            {
+                console.log("if");
+                closeNav();
+                document.getElementById("navbutton").innerHTML = "&equals;";
+            }
+            else if(document.getElementById("dsply").style.width === "91vw")
+            {
+                console.log("else if");
+                openNav();
+                document.getElementById("navbutton").innerHTML = "&times;";
+            }
+            else{
+            console.log("error")
+            openNav();
+            document.getElementById("navbutton").innerHTML = "&times";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+          <!-- colleagues top navbar -->
+          <nav id="navv" class="navigation h-nav" style="height:10vh">
+            <div class="logo nav-logo v-class">
+                <img class="logoimg" src="youthedesigner.png" alt="">
+            </div>
+          <ul class="nav-list v-class">
+            <li><a href="home2.html">Home</a></li>
+            <li><a href="AES.html">Learn Algorithm</a></li>
+        <!--   <li><a href="about">About</a></li>
+            <li><a href="#">Blog</a></li>--> 
+          </ul>
+          <div class="burger" onclick="menuu()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+        </nav>
+  <!-- my placeholder top navbar -->
+
+        <!-- <div class="navbar">
+            <ul>
+                <li>ICON</li>
+                <li>HOME</li>
+                <li>ABOUT</li>
+                <li>CONTACT</li>
+            </ul>
+        </div> -->
+        <!-- second nav bar starts -->
+        <div class="nav">
+            <div class="drop">
+                <!-- dropdown menu for mobile site -->
+                <li id="btn" class="dropbtn">ENCYRPTION TECHNIQUES <i class="arrow"></i>
+                    <div class="dropcontent">
+                        <a href="AES.html">AES</a>
+                        <a href="FPE.html">FPE</a>
+                        <a href="DesTdes.html">DES/TDES</a>
+                        <a href="Blowfish.html">BLOWFISH</a>
+                        <a href="Twofish.html">TWOFISH</a>
+                        <a href="RSA.html">RSA</a>
+                        <a href="SHA.html">SHA</a>
+                    </div>
+                </li>
+                <!-- dropdown ends -->
+            </div>
+            <ul style=" list-style-type: none;">
+                <li id="navbutton" onclick="navButn()">&equals;</li>
+                <a href="AES.html"><li>AES</li></a>
+                <a href="FPE.html"><li>FPE</li></a>
+                <a href="DesTdes.html"><li>DES/TDES</li></a>
+                <a href="Blowfish.html"><li>BLOWFISH</li></a>
+                <a href="Twofish.html"><li>TWOFISH</li></a>
+                <a href="RSA.html"><li>RSA</li></a>
+                <a href="sha.html"><li>SHA</li></a>
+            </ul>
+        </div>
+    </header>
+
+    <div>
+        <div class="container">
+            <!-- side navigator -->
+            <div class="navtab" id="sidenav">
+                <div class="head">
+                    <h2 id="closenav" onclick="closeNav()">R S A</h2>
+                </div>
+                <ul style=" list-style-type: none; padding-top: 2vh;">
+                    <li><a href="#1">Discription of RSA</a></li>
+                    <li><a href="#2">Features of RSA</a></li>
+                    <li><a href="#3">Algorithm of RSA</a></li>
+                    <li><a href="#top">BACK TO TOP</a></li>
+                </ul>
+
+            </div>
+            <!-- side navigator ends -->
+            <!-- main content starts -->
+            <div class="area">
+                <div class="heading" id="imga">
+                    <h1>&nbsp;&nbsp;Rivest-Shamir-Adleman (RSA)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
+                </div>
+                <div class="content" id="dsply">
+                    <h3 id="1">Description:-</h3>
+                    <p>The RSA algorithm is the basis of a cryptosystem -- a suite of cryptographic algorithms that are used for specific security services or purposes -- which enables public key encryption and is widely used to secure sensitive data, particularly when it is being sent over an insecure network such as the internet. </p>
+                    <p>In RSA cryptography, both the general public and therefore the private keys can encrypt a message; the other key from the one wont to encrypt a message is employed to decrypt it. This attribute is one reason why RSA has become the foremost widely used asymmetric algorithm: It provides a way to assure the confidentiality, integrity, authenticity, and non-repudiation of electronic communications and data storage.</p>
+                    <p>Many protocols like secure shell, OpenPGP, S/MIME, and SSL/TLS believe RSA for encryption and digital signature functions. it's also utilized in software programs -- browsers are a clear example, as they have to determine a secure connection over an insecure network, just like the internet, or validate a digital signature. RSA signature verification is one among the foremost commonly performed operations in network-connected systems.</p>
+                    </ul>
+                    <h2 id="2">Features of RSA:-</h2>
+                    <ul class="ConList">
+                        <li>Public/private key generation.</li>
+                        <li>Encrypt with either public or private key</li>
+                        <li>Decrypt with matching public or private key.</li>
+                        <li>Create digital signatures.</li>
+                        <li>Verify digital signatures.</li>
+                        <li>Encrypt and decrypt in-memory strings or byte arrays of any size.</li>
+                    </ul> 
+                    <h2 id="3">Algorithm:-</h2>
+                    <p>The RSA algorithm holds the subsequent features −<br><br>
+                        RSA algorithm may be a popular exponentiation during a finite field over integers including prime numbers.<br><br>
+                        The integers employed by this method are sufficiently large making it difficult to unravel.<br><br>
+                        There are two sets of keys during this algorithm: private key and public key.<br><br>
+                        You will need to undergo the subsequent steps to figure on RSA algorithm −</p>
+                    <h3>1. Key Generation:-</h3>
+                    <p>a) Select two large prime numbers <b>'p'</b> and <b>'q'</b>.</p>
+                    <p>b) Calculate the value of <b>n</b>, <b>n=p*q</b>.</p>
+                    <p>c) Calculate the value of <b>Φ(n)</b>, <b>Φ(n)=(p-1)*(q-1)</b>. <br>Where Φ(n) is a Eulers Toitient function.</p>
+                    <p>d) Choose value of <b>e</b>,  <b> 1 < e < Φ(n) </b> and <b> GCD (Φ(n),e)=1</b></p>
+                    <p>e) Calculate:<br> d = e^-1 modΦ(n) <br>  ed = 1 modΦ(n) <br> ed modΦ(n) = 1</p>
+                    <P>f) Public Key = {e,n}</P>
+                    <p>g) Private Key = {d,n}</p>
+                    <h3>2. Encryption:-</h3>   
+                    <p>plaintext = M < n <br> M  = no. of digits in plaintext. <br>c = cipher text <br><br> <b>C = M^e mod n</b></p>
+                    <h3>3. Decryption:-</h3>
+                    <p><b>M = C^d mod n</b></p>
+                    <h3>NOTE:</h3>
+                    <P>(e,n) is a public key used in encryption.</P>
+                    <P>(d,n) is a private key used in decryption.</P>
+                </div>
+            </div>
+            <!-- main content ends -->
+        </div>
+    </div>
+    <footer class="foot">
+        <ul>
+            <li><a href="home2.html">Home</a></li>
+            <li><a href="AES.html">Learn Algorithm</a></li>
+        <!--  <li><a href="#">About</a></li>
+            <li><a href="#">Blog</a></li> -->  
+        </ul>
+        <p class="footend">LearnEncryption &copy; 2021 </p>
+      </footer> 
+</body>
+<script src="home.js"></script> 
+</html>

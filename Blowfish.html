@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="types of encryption algorithms. Tagged with encryption, algorithms, programming, career.">
+    <meta name="keywords"
+        content=" AES, encryption, algorithms, programming, career, software, coding, development, engineering, inclusive, community">
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Types of Algorithms" />
+    <title>Learn Encryption</title>
+    <link rel="short icon" href="youthedesigner.ico">
+    <link rel="stylesheet" href="InternTempCSSv2.css">
+    <link rel="stylesheet" href="responsive1.css">
+    <link rel="stylesheet" href="home.css">
+
+    <script>
+        function openNav() {
+            // document.getElementById("sidenav").style.display = 'flex';
+            document.getElementById("dsply").style.width = "71vw";
+            document.getElementById("imga").style.width = "79vw";
+            document.getElementById("sidenav").style.width = '19vw';
+        }
+        function closeNav() {
+            // document.getElementById("sidenav").style.display = 'none';
+            document.getElementById("sidenav").style.width = '0';
+            document.getElementById("dsply").style.width = "91vw";
+            document.getElementById("imga").style.width = "98vw";
+        }
+        function navButn() {
+            if (document.getElementById("dsply").style.width === "71vw") {
+                console.log("if");
+                closeNav();
+                document.getElementById("navbutton").innerHTML = "&equals;";
+            }
+            else if (document.getElementById("dsply").style.width === "91vw") {
+                console.log("else if");
+                openNav();
+                document.getElementById("navbutton").innerHTML = "&times;";
+            }
+            else {
+                console.log("error")
+                openNav();
+                document.getElementById("navbutton").innerHTML = "&times";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+       <!-- colleagues top navbar -->
+       <nav id="navv" class="navigation h-nav" style="height:10vh">
+        <div class="logo nav-logo v-class">
+            <img class="logoimg" src="youthedesigner.png" alt="">
+        </div>
+      <ul class="nav-list v-class">
+        <li><a href="home2.html">Home</a></li>
+        <li><a href="AES.html">Learn Algorithm</a></li>
+    <!--    <li><a href="about">About</a></li>
+        <li><a href="#">Blog</a></li> -->
+      </ul>
+      <div class="burger" onclick="menuu()">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </nav>
+<!-- my placeholder top navbar -->
+
+    <!-- <div class="navbar">
+        <ul>
+            <li>ICON</li>
+            <li>HOME</li>
+            <li>ABOUT</li>
+            <li>CONTACT</li>
+        </ul>
+    </div> -->
+    <!-- second nav bar starts -->
+    <div class="nav">
+        <div class="drop">
+            <!-- dropdown menu for mobile site -->
+            <li id="btn" class="dropbtn">ENCYRPTION TECHNIQUES <i class="arrow"></i>
+                <div class="dropcontent">
+                    <a href="AES.html">AES</a>
+                    <a href="FPE.html">FPE</a>
+                    <a href="DesTdes.html">DES/TDES</a>
+                    <a href="Blowfish.html">BLOWFISH</a>
+                    <a href="Twofish.html">TWOFISH</a>
+                    <a href="RSA.html">RSA</a>
+                    <a href="SHA.html">SHA</a>
+                </div>
+            </li>
+            <!-- dropdown ends -->
+        </div>
+        <ul style=" list-style-type: none;">
+            <li id="navbutton" onclick="navButn()">&equals;</li>
+            <a href="AES.html"><li>AES</li></a>
+            <a href="FPE.html"><li>FPE</li></a>
+            <a href="DesTdes.html"><li>DES/TDES</li></a>
+            <a href="Blowfish.html"><li>BLOWFISH</li></a>
+            <a href="Twofish.html"><li>TWOFISH</li></a>
+            <a href="RSA.html"><li>RSA</li></a>
+            <a href="SHA.html"><li>SHA</li></a>
+        </ul>
+    </div>
+    </header>
+
+    <div>
+        <div class="container">
+            <!-- side navigator -->
+            <div class="navtab" id="sidenav">
+                <div class="head">
+                    <h2 id="closenav" onclick="closeNav()">BLOWFISH</h2>
+                </div>
+                <ul style=" list-style-type: none; padding-top: 2vh;">
+                    <li><a href="#1">Description</a></li>
+                    <li><a href="#2">Parameters </a></li>
+                    <li><a href="#3">Algorithm</a></li>
+                    <li><a href="#4">Steps of Encryption</a></li>
+                    <li><a href="#5">Generation of Subkeys
+                    </a></li>
+                    <li><a href="#6">Initialize Substitution Boxes.
+                    </a></li>
+                    <li><a href="#7">Encryption
+                    </a></li>
+                    <li><a href="#8">Steps of Decryption</a></li>
+                    <li><a href="#top">BACK TO TOP</a></li>
+                </ul>
+
+            </div>
+            <!-- side navigator ends -->
+            <!-- main content starts -->
+            <div class="area">
+                <div class="heading" id="imga">
+                    <h1 id="1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BlowFish&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
+                </div>
+                <div class="content" id="dsply">
+                    <h2 id="2">Description:</h2>
+                    <p >Blowfish is an encryption technique designed by Bruce Schneier in 1993 as an alternative to DES
+                        Encryption Technique. It is significantly faster than DES and provides a good encryption rate
+                        with no effective cryptanalysis technique found to date. It is one of the first, secure block
+                        cyphers not subject to any patents and hence freely available for anyone to use.</p>
+                    <h3 >Following are few parameters related to it:</h3>
+                    <ul class="ConList">
+                        <li>Block size: 64-bits
+                        </li>
+                        <li>Key size: 32-bits to 448-bits variable size</li>
+                        <li>Number of subkeys: 18 [P-array]
+                        </li>
+                        <li >Number of rounds: 16
+                        </li>
+                        <li>Number of substitution boxes: 4 [each having 512 entries of 32 bits each]
+                        </li>
+                        <li>Blowfish requires about 5KB of memory.
+                        </li>
+                        <li >Many cryptographers have examined Blowfish, although there are few published results.
+                            Serge Vaudenay examined weak keys in Blowfish; there is a class of keys that can be
+                            detected–although not broken–in Blowfish variants of 14 rounds or less. </li>
+                        <li id="3">Vincent Rijmen’s Ph.D. thesis includes a second-order differential attack on 4-round
+                            Blowfish that cannot be extended to more rounds. </li>
+                    </ul>
+                    <h2 id="4">Algorithm:
+                    </h2>
+                    <h3  id="5" >Steps of Encryption</h3>
+                    <p> <b> Following are the Steps which are followed during the encryption of data:</b> 
+                        <p>1.Generation of Subkeys
+                        </p>
+                        <ul class="ConList">
+                            <li>18 subkeys{P[0], P[1]…P[17]} are needed in both encryption as well as decryption process and the same subkeys are used for both the processes.
+
+                            </li>
+                            <li>These 18 subkeys are stored in a P-array with each array element being a 32-bit entry.
+                            </li>
+                            <li><img src="gen.jpeg" alt="" srcset="">
+                            </li>
+                            <li id="6">Now each of the subkey is changed with respect to the input key as:
+                                P[0] = P[0] xor 1st 32-bits of input key
+                                P[1] = P[1] xor 2nd 32-bits of input key
+                                P[i] = P[i] xor (i+1)th 32-bits of input key [roll over to 1st 32-bits depending       on the key length]
+                               P[17] = P[17] xor 18th 32-bits of input key 
+                               (rolls over to 1st 32-bits depending on key length)
+                               
+                            </li>
+                            <li >The resultant P-array Holds 18 subkeys that are used during the entire encryption process.
+                            </li>
+                        </ul>
+                        <p>2.Initialize Substitution Boxes</p>
+                        <ul  class="ConList">
+                            <li id="7">
+                                Four substitution boxes (S-boxes) are needed {S[0], S[1], .…, S[4]} In both encryption as well as decryption process with each S-box having 256 entries {S [i][0], S [i][1], .…, S [i][255],} Each entry is 32 bit. 
+                            </li>
+                            <li >It is initialised with the digits of Pi after initialising the P-array
+                            </li>
+                        </ul>
+                        <p>3.Encryption <br> <br>
+                            
+                            Encryption function consists of two parts: <br> 
+                            1)Rounds: <br> 
+                            Encryption consists of 16 rounds with each round namely R(i) now let the input be plain text PT from the previous round and corresponding subkey P[i].<br>  
+                            Description of each “Round” is as follows: <br> 
+                            <img src="enc.jpeg" alt="" srcset=""> <br>
+                            Graphical representation of the blue fish algorithm appears in the figure about in this description or 64-bit plain text is first divided into 32-bits the left 32-bit are XORed with the first element of P-array to create a value called P`. Now this P` will run through the transformation function called F. When the resultant of this transformation function is XORed with right 32-bits of the message to produce a new value namely F`. F` then replaces the “Left” half of the message and P` replaces the “Right” half, and the process is then repeated for more 15 times with successive members of the P-array. The resulting P` and F`are then XORed Read the last two entries in the P-array (entries17 and 18), and recommended to produce 64-bit ciphertext. <br><br>
+                            Description of of the function “F” is as follows <br>
+                            <img src="enc2.jpeg" alt="" srcset=""> <br>
+
+                            A graphical representation of F appears in the figure above.The function divides 32-bit input into 4 bytes and uses those as indices into S-array. The lookup results are then added and XORed together to produce the output. <br>
+                        </p>
+
+                           <p id="8"> 2)Post-processing: Output after the rounds is processed as follows to generate the ciphertext: 
+                        </p>
+                        <h3>Steps of Decryption</h3>
+                        <p> <b> Following are the Steps which are followed during the decryption of data:</b> 
+                        <ul class="ConList">
+                            <li>
+                                Generation of Subkeys
+
+                            </li>
+                            <li>
+                                Initialize Substitution Boxes
+
+                            </li>
+                            <li>
+                                Decryption
+
+                            </li>
+                            
+                        </ul>
+                        <p>  As Blowfish is a symmetric algorithm the same procedure is used for decryption as well as for encryption the only difference is that the input to the encryption is a plain text whereas for decryption the input is ciphertext. 
+                        </p>
+                        <p>
+                            The P-array and S-array values used by Blowfish  are precomputed based on the user's key.  In effect,  the user's key is transformed into the P-array and S-array; the key itself may be discarded after the transformation.  The P-array  and S-array  need not be recomputed as long as the key doesn't change, but must remain secret.
+
+                        </p>    
+                </div>
+            </div>
+            <!-- main content ends -->
+        </div>
+    </div>
+    <footer class="foot">
+        <ul>
+            <li><a href="home2.html">Home</a></li>
+            <li><a href="AES.html">Learn Algorithm</a></li>
+        <!--  <li><a href="#">About</a></li>
+            <li><a href="#">Blog</a></li> -->  
+        </ul>
+        <p class="footend">LearnEncryption &copy; 2021 </p>
+      </footer> 
+</body>
+<script src="home.js"></script> 
+</html>

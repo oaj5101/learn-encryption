@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="types of encryption algorithms. Tagged with encryption, algorithms, programming, career.">
+    <meta name="keywords"
+        content=" AES, encryption, algorithms, programming, career, software, coding, development, engineering, inclusive, community">
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Types of Algorithms" />
+    <title>Learn Encryption</title>
+    <link rel="short icon" href="youthedesigner.ico">
+    <link rel="stylesheet" href="InternTempCSSv2.css">
+    <link rel="stylesheet" href="responsive1.css">
+    <link rel="stylesheet" href="home.css">
+
+    <script>
+        function openNav() {
+            // document.getElementById("sidenav").style.display = 'flex';
+            document.getElementById("dsply").style.width = "71vw";
+            document.getElementById("imga").style.width = "79vw";
+            document.getElementById("sidenav").style.width = '19vw';
+        }
+        function closeNav() {
+            // document.getElementById("sidenav").style.display = 'none';
+            document.getElementById("sidenav").style.width = '0';
+            document.getElementById("dsply").style.width = "91vw";
+            document.getElementById("imga").style.width = "98vw";
+        }
+        function navButn() {
+            if (document.getElementById("dsply").style.width === "71vw") {
+                console.log("if");
+                closeNav();
+                document.getElementById("navbutton").innerHTML = "&equals;";
+            }
+            else if (document.getElementById("dsply").style.width === "91vw") {
+                console.log("else if");
+                openNav();
+                document.getElementById("navbutton").innerHTML = "&times;";
+            }
+            else {
+                console.log("error")
+                openNav();
+                document.getElementById("navbutton").innerHTML = "&times";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+       <!-- colleagues top navbar -->
+       <nav id="navv" class="navigation h-nav" style="height:10vh">
+        <div class="logo nav-logo v-class">
+            <img class="logoimg" src="youthedesigner.png" alt="">
+        </div>
+      <ul class="nav-list v-class">
+        <li><a href="home2.html">Home</a></li>
+        <li><a href="AES.html">Learn Algorithm</a></li>
+    <!--  <li><a href="about">About</a></li>
+        <li><a href="#">Blog</a></li> -->  
+      </ul>
+      <div class="burger" onclick="menuu()">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </nav>
+<!-- my placeholder top navbar -->
+
+    <!-- <div class="navbar">
+        <ul>
+            <li>ICON</li>
+            <li>HOME</li>
+            <li>ABOUT</li>
+            <li>CONTACT</li>
+        </ul>
+    </div> -->
+    <!-- second nav bar starts -->
+    <div class="nav">
+        <div class="drop">
+            <!-- dropdown menu for mobile site -->
+            <li id="btn" class="dropbtn">ENCYRPTION TECHNIQUES <i class="arrow"></i>
+                <div class="dropcontent">
+                    <a href="AES.html">AES</a>
+                    <a href="FPE.html">FPE</a>
+                    <a href="DesTdes.html">DES/TDES</a>
+                    <a href="Blowfish.html">BLOWFISH</a>
+                    <a href="Twofish.html">TWOFISH</a>
+                    <a href="RSA.html">RSA</a>
+                    <a href="SHA.html">SHA</a>
+                </div>
+            </li>
+            <!-- dropdown ends -->
+        </div>
+        <ul style=" list-style-type: none;">
+            <li id="navbutton" onclick="navButn()">&equals;</li>
+            <a href="AES.html"><li>AES</li></a>
+            <a href="FPE.html"><li>FPE</li></a>
+            <a href="DesTdes.html"><li>DES/TDES</li></a>
+            <a href="Blowfish.html"><li>BLOWFISH</li></a>
+            <a href="Twofish.html"><li>TWOFISH</li></a>
+            <a href="RSA.html"><li>RSA</li></a>
+            <a href="SHA.html"><li>SHA</li></a>
+        </ul>
+    </div>
+    </header>
+
+    <div>
+        <div class="container">
+            <!-- side navigator -->
+            <div class="navtab" id="sidenav">
+                <div class="head">
+                    <h2 id="closenav" onclick="closeNav()">S H A</h2>
+                </div>
+                <ul style=" list-style-type: none; padding-top: 2vh;">
+                    <li><a href="#1">Description:</a></li>
+                    <li><a href="#2">Functions used in the algorithm:</a></li>
+                    <li><a href="#3">Circular shift operation(s(x,n))</a></li>
+                    <li><a href="#4">ALGORITHM:</a></li>
+                    <li><a href="#5">STEPS OF ENCRYPTION:</a></li>
+                    <li><a href="#6">PREVIOUS MAJOR ATTACKS:</a></li>
+                    <li><a href="#8">COMMONLY USED ATTACKS ON SHA:</a></li>
+                    <li><a href="#9">Conclusion:</a></li>
+                    <li><a href="#10">SHA 2:</a></li>
+                    <li><a href="#11">SOURCES:</a></li>
+                    <li><a href="#top">BACK TO TOP</a></li>
+                </ul>
+
+            </div>
+            <!-- side navigator ends -->
+            <!-- main content starts -->
+            <div class="area">
+                <div class="heading" id="imga">
+                    <h1 id="1">&nbsp;&nbsp;&nbsp;Secure Hash Algorithm (SHA)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
+                </div>
+                <div class="content" id="dsply">
+                    <h3 >Description:</h3>
+                    <ul class="ConList">
+                        <li>Secure Hash Algorithms, also known as SHA,These algorithms are designed to be one-way
+                            functions, meaning that once they’re transformed into their respective hash values, they are
+                            almost impossible to transform back into the original data</li>
+                        <li>It works by transforming the data using a hash function</li>
+                        <li>hash function:Is an algorithm that uses bitwise operations, modular additions, and
+                            compression functions to produces a fixed-size string that can't traced back to the original
+                        </li>
+                        <li>Types of SHA available are SHA-1, SHA-2, and SHA-3, each of which was successively designed
+                            with increasingly stronger encryption in response to hacker attacks</li>
+                        <li>SHA 0 is now unusable due to the widely exposed vulnerabilities</li>
+                        <li>SHA's are commenly used to save passwords at the backend , as in to safegaurd the user
+                            passwords during an attack , as the passwords are saved as hash values ,hackers have no way
+                            of tracing back to the actual password</li>
+                    </ul>
+                    <h3>Block size: 512 Bits</h3>
+                    <h3 id="2">No. of rounds:80</h3>
+                    <h3>Size:160 bits</h3>
+
+                    <h3>Functions used in the algorithm:</h3>
+                    <p>f(i;B,C,D) = (B ∧ C)∨((¬B)∧D) for 0≥i≥19 </p>
+                    <p> f(i;B,C,D) = B ⊕ C ⊕ D for 20≥i≥39 </p>
+                    <p> f(i;B,C,D) = (B ∧ C) ∨ (B ∧ D)∨ (C ∧ D) for 40≥i≥59 </p>
+                    <p> f(i;B,C,D) = B⊕ C ⊕ D for 60≥i≥79 </p>
+
+                    <h3>constants:</h3>
+                    <p>K(i)=5A827999, where 0≤i≤19 round 1</p>
+                    <p>K(i)=6ED9EBA1, where 20≤i≤39 round 2</p>
+                    <p id="3">K(i)=8F1BBCDC, where 40≤i≤59 round 3</p>
+                    <p>K(i)=CA62C1D6, where 60≤i≤79 round 4</p>
+
+                    <h2>Circular shift operation(s(x,n)):</h2>
+                    <h3>1.The left-shift operation:</h3>
+                    <p>when X&lt;&lt;n ,discard the leftmost n bits of X and padding the result with n zeroes on the
+                        right.</p>
+                    <h3>The right-shift operation:</h3>
+                    <p>when X>>32−n,discard the rightmost n bits of X and padding the result with n zeroes on the left
+                    </p>
+
+                    <img class="refimg" src="rightrotate.jpg" alt="">
+                    <img id="4" class="refimg" src="leftrotate.jpg" alt="">
+                    <h2>ALGORITHM:-</h2>
+                    <p>SHA-1 works by feeding a message as a bit string of length less than 2^64 bits,it produces a
+                        160-bit hash value known as a message digest. </p>
+                        <p></p>
+                        <p></p>
+                        <img class="refimg" src="SHAOVERVIEW.png" alt="">
+                    
+                    <p id="5"></p><br><br><br>
+                    <h2> STEPS OF ENCRYPTION:</h2>
+                    <h3>STEP 1:</h3>
+                    <p>The first step is to initialize five random strings of hex characters that will serve as part of
+                        the hash function (shown in hex):</p>
+                    <p><b> H0 = 67DE2A01</b></p>
+                    <p><b> H1 = BB03E28C</b></p>
+                    <p><b> H2 = 011EF1DC</b></p>
+                    <p><b> H3 = 9293E9E2</b></p>
+                    <p><b> H4 = CDEF23A9</b></p>
+                    <h3>STEP 2:</h3>
+                    <p> In the second step padding is done, by appending(adding) a 1 at the end.</p>
+                    <p><i>Example:</i></p>
+                    <p>Let's Suppose the original message is the bit string:</p>
+                    <p><i><b> 01100111 00100110 01101011 01101100 01101100.</b></i></p>
+                    <p>this gives,<br><br>
+                        <i><b> 01100111 00100110 01101011 01101100 01101100 1.</b></i><br>
+                        (67266B6C6C80 in hex). <br><br>
+                        then after appending <b> 1</b> enough <b>0</b>s are appended until the message is 448 bits(1
+                        hex=4bits).
+                    </p>
+                    <br>
+                    <p><b><i>67266B6C 6C800000 00000000 00000000<br><br>
+                                00000000 00000000 00000000 00000000<br><br>
+                                00000000 00000000 00000000 00000000<br><br>
+                                00000000 00000000</i></b>
+                    </p>
+                    <br><br>
+                    <p>The last 64 bits of the last 512-bit block are reserved for the length l of the original message.
+                        <br><br>
+                        The length of the message represented by 64 bits is then added to the end, producing a message
+                        that is 512 bits long, it 40 length message gets stored as 28 with 0's padded ahead
+                    </p>
+                    <br>
+                    <p><b><i>67266B6C 6C800000 00000000 00000000<br><br>
+                                00000000 00000000 00000000 00000000<br><br>
+                                00000000 00000000 00000000 00000000<br><br>
+                                00000000 00000000 00000000 00000028</i></b>
+                    </p> <br>
+                    <p>now the message fits 512 bits completely as 1 hex occupies 4bits (128*4=512)</p>
+                    <h3>STEP 3:</h3>
+                    <p>The padded input obtained above, is then divided into 512-bit chunks(when message is greater than
+                        448 bits), and each chunk is further divided into sixteen 32-bit words, W0 … W(15) <br><br>
+                        ​if there’s more than one chunk, each chunk gets divided in into 32bits chunks individually
+                    </p>
+                    <h3>STEP: 4</h3>
+                    <p>For each chunk, begin the 80 iterations(rounds) necessary for hashing (80 is a predetermined
+                        number for SHA-1), and execute the following steps on each chunk(512 bits) <br><br>
+                        The words of the 80-word sequence are labeled R(0), R(1),..., R(79). A single word buffer TEMP
+                        is also employed <br><br>
+                        blocks(chunk 512 bits) M(1), M(2),..., M(n). The processing of each M(i) involves 80
+                        steps(rounds).
+                    </p><br>
+                    <img class="refimg" src="ogalgo.png" alt=""><br>
+                    <p>Before processing any blocks, the H's are initialized as follows: in hex,<br><br>
+
+                        H0 = 67452301<br><br>
+                        H1 = EFCDAB89<br><br>
+                        H2 = 98BADCFE<br><br>
+                        H3 = 10325476<br><br>
+                        H4 = C3D2E1F0.<br>
+                    </p><br>
+                    <p>Now M(1), M(2), ... , M(n) are processed. To process M(i), we proceed as follows: <br><br>
+                        A) Divide M(i) into 16 words R(0), R(1), ... ,R(15), where R(0) is the left-most word.<br><br>
+                        B) For t = 16 to 79 let<br><br>
+                    </p>
+
+                    <p><b><i>W(t) = S^1(W(t-3) XOR W(t-8) XOR W(t-14) XOR W(t-16)).</i></b></p>
+                    <p>
+                        C) Let <b><i>A = H0, B = H1, C = H2, D = H3, E = H4.</i></b> (for 1st iteration) <br><br>
+                        D) For t = 0 to 79 do,<br><br>
+                        <b><i>TEMP = S^5(A) + f(t;B,C,D) + E + W(t) + K(t);</b></i>
+                    </p>
+                    <br>
+                    <img class="refimg" src="oginsideround.png" alt="">
+                    <p id="6"><b><i>E = D; D = C; C = S^30(B); B = A; A = TEMP;</b></i><br><br>
+                        E) Let <b><i>H0 = H0 + A, H1 = H1 + B, H2 = H2 + C, H3 = H3 + D, H4 = H4 + E.</b></i> <br><br>
+                        After processing M(n), the message digest is the 160-bit string represented by the 5 words
+                        <br><br>
+                        <b><i>H0 H1 H2 H3 H4.</b></i>
+                    </p>
+                    <h2>PREVIOUS MAJOR ATTACKS:</h2>
+                    <h3>1.THE SHAppening:</h3>
+                    <p>DESCRIPTION:</p>
+                    <p>On 8 October 2015, Marc Stevens, Pierre Karpman, and Thomas Peyrin published a freestart collision attack on SHA-1's compression function that requires only 257 SHA-1 evaluations. This does not directly translate into a collision on the full SHA-1 hash function (where an attacker is not able to freely choose the initial internal state), but undermines the security claims for SHA-1. In particular, it was the first time that an attack on full SHA-1 had been demonstrated; all earlier attacks were too expensive for their authors to carry them out. The authors named this significant breakthrough in the cryptanalysis of SHA-1 The SHAppening.</p>
+                    <p>The method was based on their earlier work, as well as the auxiliary paths (or boomerangs) speed-up technique from Joux and Peyrin, and using high performance/cost efficient GPU cards from NVIDIA. The collision was found on a 16-node cluster with a total of 64 graphics cards. The authors estimated that a similar collision could be found by buying US$2,000 of GPU time on EC2</p>
+                    <p>The authors estimated that the cost of renting enough of EC2 CPU/GPU time to generate a full collision for SHA-1 at the time of publication was between US$75K and 120K, and noted that was well within the budget of criminal organizations, not to mention national intelligence agencies. As such, the authors recommended that SHA-1 be deprecated as quickly as possible.</p>
+
+                    <h3>2.SHAttered – first public collision:</h3>
+                    <p>DESCRIPTION:</p>
+                    <p>On 23 February 2017, the CWI (Centrum Wiskunde & Informatica) and Google announced the SHAttered attack, in which they generated two different PDF files with the same SHA-1 hash in roughly 263.1 SHA-1 evaluations. This attack is about 100,000 times faster than brute forcing a SHA-1 collision with a birthday attack, which was estimated to take 280 SHA-1 evaluations. The attack required "the equivalent processing power of 6,500 years of single-CPU computations and 110 years of single-GPU computations".</p>
+
+                    <h3>3.Birthday-Near-Collision Attack – first practical chosen-prefix attack:</h3>
+                    <p>DESCRIPTION:</p>
+                    <p >On 24 April 2019 a paper by Gaëtan Leurent and Thomas Peyrin presented at Eurocrypt 2019 described an enhancement to the previously best chosen-prefix attack in Merkle–Damgård–like digest functions based on Davies–Meyer block ciphers. With these improvements, this method is capable of finding chosen-prefix collisions in approximately 268 SHA-1 evaluations. This is approximately 1 billion times faster (and now usable for many targeted attacks, thanks to the possibility of choosing a prefix, for example malicious code or faked identities in signed certificates) than the previous attack's 277.1 evaluations (but without chosen prefix, which was impractical for most targeted attacks because the found collisions were almost random)[47] and is fast enough to be practical for resourceful attackers, requiring approximately $100,000 of cloud processing. This method is also capable of finding chosen-prefix collisions in the MD5 function, but at a complexity of 246.3 does not surpass the prior best available method at a theoretical level (239), though potentially at a practical level (≤249).[48][49] This attack has a memory requirement of 500+ GB. </p>
+                    <p id="8">On 5 January 2020 the authors published an improved attack.[9] In this paper they demonstrate a chosen-prefix collision attack with a complexity of 263.4, that at the time of publication would cost 45k USD per generated collision.</p>
+                    <h2>COMMONLY USED ATTACKS ON SHA:</h2>
+                    <h3>Pre-image ATTACK:</h3>
+                    <p>One of the most common attacks seen in SHA 0&1 are the pre-image attack,</p>
+                    <p>A preimage attack is against the one-way property of a hash function. In a preimage attack, a message can be determined that hashes to a given value. This could allow a password attack, where the attacker can determine a password based on the hash of the password found in a database. SHA-1 is currently resistant to preimage attack</p>
+                    <h3>Second-preimage ATTACK:</h3>
+                    <p>In a second-preimage attack, a second message can be found that hashes to the same value as a given message. This allows the attacker to create fraudulent certificates at any time, not just at the time of certificate issuance. SHA-1 is currently resistant to second-preimage attack</p>
+                    <h3>Collision ATTACK:</h3>   
+                    <p>A collision attack occurs when it is possible to find two different messages that hash to the same value</p> 
+                    <p>Attacks against hash functions are measured against the length of time required to perform a brute-force attack, in which messages are selected at random and hashed until a collision or preimage is found</p>
+                    <p id="9">The time required to find a collision by brute force is approximately 2ⁿᐟ², where n is the bit length of the hash. To find a preimage or second-preimage by brute force, approximately 2n messages must be hashed. Thus, a hash function is weakened if a collision can be found in less time than that needed to compute 2ⁿᐟ² hashes, or if a preimage or second-preimage can be found in less time than would be needed to compute 2n hashes. For common hashes the bit length is: MD5 (128 bits), SHA-1 (160 bits) and SHA-2 (224, 256, 384, or 512 bits)</p>
+                    <h2>Conclusion:</h2>
+                    <p>The time required to perform a brute-force attack keeps getting shorter due to increases in available computing power</p>
+                    <p>As such, increases in hash function lengths are necessary to maintain an acceptable margin of security. In the past, an attack threshold of 2⁶⁴ operations was considered acceptable for some uses</p>
+                    <p>now the bar set at 2⁸⁰, and this will soon move up to 2¹¹².</p>
+                    <p>Using the formula 2ⁿᐟ², we can see that a brute-force attack against SHA-1 would require 2⁸⁰ computations. Unfortunately, security researchers have discovered an attack strategy that requires only 2⁶¹ computations. This would make the time required to perform an attack below current standards.</p>
+                    <p id="10">The bottom line is SHA-1’s collision resistance is weak and the cost of an attack is dropping; as such, SHA-1 must be replaced with SHA-2.</p>
+
+                    <h2>SHA 2:</h2>
+                    <p>Due to the exposed vulnerabilities of SHA-1, cryptographers modified the algorithm to produce SHA-2, which consists of not one but two hash functions known as SHA-256 and SHA-512, using 32- and 64-bit words, respectively. There are additional truncated versions of these hash functions, known as SHA-224, SHA-384, SHA-512/224, and SHA-512/256, which can be used for either part of the algorithm.</p>
+                    <p>SHA-1 and SHA-2 differ in several ways; mainly, SHA-2 produces 224- or 256-sized digests, whereas SHA-1 produces a 160-bit digest; SHA-2 can also have block sizes that contain 1024 bits, or 512 bits, like SHA-1.
+                    </p>
+                    <p id="11">Brute force attacks on SHA-2 are not as effective as they are against SHA-1. A brute force search for finding a message that corresponds to a given digest of length LL using brute force would require 2^L2 evaluations, which makes SHA-2 a lot safer against these kinds of attacks</p>
+
+                    <h2>SOURCES:</h2>
+                    <p>https://www.youtube.com/watch?v=YCf80-8xhGs</p>
+                    <p>https://www.ipa.go.jp/security/rfc/RFC3174EN.html</p>
+                    <p>https://brilliant.org/wiki/secure-hashing-algorithms/</p>
+                </div>
+            </div>
+            <!-- main content ends -->
+        </div>
+    </div>
+    <footer class="foot">
+        <div class="lo">
+            <img src="youthedesigner.png" alt="" class="lolo">
+        </div>
+        <ul>
+            <li><a href="home2.html">Home</a></li>
+            <li><a href="AES.html">Learn Algorithm</a></li>
+        <!--  <li><a href="#">About</a></li>
+            <li><a href="#">Blog</a></li> -->  
+        </ul>
+        <p class="footend">LearnEncryption &copy; 2021 </p>
+      </footer> 
+</body>
+<script src="home.js"></script> 
+</html>

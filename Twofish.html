@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="types of encryption algorithms. Tagged with encryption, algorithms, programming, career.">
+    <meta name="keywords"
+        content=" TwoFish, encryption, algorithms, programming, career, software, coding, development, engineering, inclusive, community">
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Types of Algorithms" />
+    <title>Learn Encryption</title>
+    <link rel="short icon" href="youthedesigner.ico">
+    <link rel="stylesheet" href="InternTempCSSv2.css">
+    <link rel="stylesheet" href="responsive1.css">
+    <link rel="stylesheet" href="home.css">
+
+    <script>
+        function openNav() {
+            // document.getElementById("sidenav").style.display = 'flex';
+            document.getElementById("dsply").style.width = "71vw";
+            document.getElementById("imga").style.width = "79vw";
+            document.getElementById("sidenav").style.width = '19vw';
+        }
+        function closeNav() {
+            // document.getElementById("sidenav").style.display = 'none';
+            document.getElementById("sidenav").style.width = '0';
+            document.getElementById("dsply").style.width = "91vw";
+            document.getElementById("imga").style.width = "98vw";
+        }
+        function navButn()
+        {
+            if(document.getElementById("dsply").style.width ==="71vw")
+            {
+                console.log("if");
+                closeNav();
+                document.getElementById("navbutton").innerHTML = "&equals;";
+            }
+            else if(document.getElementById("dsply").style.width === "91vw")
+            {
+                console.log("else if");
+                openNav();
+                document.getElementById("navbutton").innerHTML = "&times;";
+            }
+            else{
+            console.log("error")
+            openNav();
+            document.getElementById("navbutton").innerHTML = "&times";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+       <!-- colleagues top navbar -->
+       <nav id="navv" class="navigation h-nav" style="height:10vh">
+        <div class="logo nav-logo v-class">
+            <img class="logoimg" src="youthedesigner.png" alt="">
+        </div>
+      <ul class="nav-list v-class">
+        <li><a href="home2.html">Home</a></li>
+        <li><a href="AES.html">Learn Algorithm</a></li>
+    <!--   <li><a href="about">About</a></li>
+        <li><a href="#">Blog</a></li> --> 
+      </ul>
+      <div class="burger" onclick="menuu()">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </nav>
+<!-- my placeholder top navbar -->
+
+    <!-- <div class="navbar">
+        <ul>
+            <li>ICON</li>
+            <li>HOME</li>
+            <li>ABOUT</li>
+            <li>CONTACT</li>
+        </ul>
+    </div> -->
+    <!-- second nav bar starts -->
+    <div class="nav">
+        <div class="drop">
+            <!-- dropdown menu for mobile site -->
+            <li id="btn" class="dropbtn">ENCYRPTION TECHNIQUES <i class="arrow"></i>
+                <div class="dropcontent">
+                    <a href="AES.html">AES</a>
+                    <a href="FPE.html">FPE</a>
+                    <a href="DesTdes.html">DES/TDES</a>
+                    <a href="Blowfish.html">BLOWFISH</a>
+                    <a href="Twofish.html">TWOFISH</a>
+                    <a href="RSA.html">RSA</a>
+                    <a href="sha.html">SHA</a>
+                </div>
+            </li>
+            <!-- dropdown ends -->
+        </div>
+        <ul style=" list-style-type: none;">
+            <li id="navbutton" onclick="navButn()">&equals;</li>
+            <a href="AES.html"><li>AES</li></a>
+            <a href="FPE.html"><li>FPE</li></a>
+            <a href="DesTdes.html"><li>DES/TDES</li></a>
+            <a href="Blowfish.html"><li>BLOWFISH</li></a>
+            <a href="Twofish.html"><li>TWOFISH</li></a>
+            <a href="RSA.html"><li>RSA</li></a>
+            <a href="sha.html"><li>SHA</li></a>
+        </ul>
+    </div>
+    </header>
+
+    <div>
+        <div class="container">
+            <!-- side navigator -->
+            <div class="navtab" id="sidenav">
+                <div class="head">
+                    <h2 id="closenav" onclick="closeNav()">TwoFish</h2>
+                </div>
+                <ul style=" list-style-type: none; padding-top: 2vh;">
+                    <li><a href="#1">Features of TwoFish</a></li>
+                    <li><a href="#2">TwoFish Algorithm</a></li>
+                    <li><a href="#3">Steps in Algorithm</a></li>
+                    <li><a href="#4">CONCLUSION</a></li>
+                    <li><a href="#top">BACK TO TOP</a></li>
+                </ul>
+
+            </div>
+            <!-- side navigator ends -->
+            <!-- main content starts -->
+            <div class="area">
+                <div class="heading" id="imga">
+                    <h1 id="1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TwoFish&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
+                </div>
+                <div class="content" id="dsply">
+                    <h3 >Features Of TwoFish:-</h3>
+                    <ul class="ConList">
+                        <li>Two fishes A square code by Counterpane Labs, distributed in 1998. It was one of the five Advanced Encryption Standards(AES) finalists, and was not chosen as AES. </li>
+                        <li>Twofish has a square size of 128 pieces, and a key-size of reach from 128 to 256 pieces </li>
+                        <li>It is improved for 32 digit CPUs</li>
+                        <li>It requires less or low RAM and ROM </li>
+                        <li id="2">Twofish is a patent and the source code isn't protected and permit free; henceforth it is free for all clients. </li>
+                        <li>Each progression of the round work is bijective. That is, each yield is conceivable. </li>
+                        <li >It's calculations is easy to comprehend and complex to break </li>
+                    </ul>
+                    <h2>TwoFish Algorithm:</h2>
+                    <p>Twofish is a symmetric square code; a solitary key is utilized for encryption and unscrambling. Twofish has a square size of 128 pieces, and acknowledges a key of any length up to 256 pieces. (NIST required the calculation to acknowledge 128-, 192-, and 256-bit keys.) Twofish is quick on both 32-digit and 8-bit CPUs (savvy cards, inserted chips, and so forth), and in equipment. Furthermore, it's adaptable; it very well may be utilized in network applications where keys are changed often and in applications where there is practically zero RAM and ROM accessible.</p>
+                    <p></p>
+                    <p>Unlike DES, the number of rounds in AES is variable and depends on the length of the key. AES
+                        uses 10 rounds for 128-bit keys, 12 rounds for 192-bit keys and 14 rounds for 256-bit keys. Each
+                        of these rounds uses a different 128-bit round key, which is calculated from the original AES
+                        key.</p>
+                        <br>
+                    <img class="refimg" src="blowfishimg.png" alt="blowfishimg">
+                    <p id="3"></p>
+                    <br>
+                    <br>
+                    <br>
+                    <h2>Steps in Algorithm:</h2>
+                    <ul class="ConList">
+                        <li>The above block is a plaintext of 128 pieces. This 128 has been partitioned into 4x32 pieces (64 pieces on left just as on right side) as displayed in the figure above.There are 16 absolute rounds in twofish. 
+                        </li><br>
+                        <li>In each round of Twofish, two 32-digit words (the two vertical lines along the left of Figure) fill in as contribution to the F work. </li><br>
+                        <li>Then, at that point each word is separated into four bytes. Those four bytes are sent through four distinctive key-subordinate S-boxes. The four yield bytes (the S-boxes have 8-cycle info and yield) are joined utilizing a Maximum Distance Separable (MDS) framework and consolidated into a 32-bit word. </li><br>
+                        <li>Then, at that point the two 32-bit words are joined utilizing a Pseudo-Hadamard Transform (PHT), added to two round subkeys, then, at that point XORed with the right 50% of the content. There are additionally two 1-cycle turns going on, one preceding and one get-togethers XOR. </li><br>
+                        <li>Twofish likewise has something many refer to as "pre-brightening" and "post-brightening;" extra subkeys are XORed into the content square both before the first round and after the last round. </li><br>
+                        <li id="4">Each progression of the round work is bijective. That is, each yield is conceivable. The round work stirs up activities from various mathematical gatherings: S-box replacement, a MDS network in GF(28), expansion in GF(232), expansion in GF(2) (additionally called XOR), and 1-digit revolutions. This makes the calculation hard to assault numerically. </li><br>
+                    </ul>
+                    <h3>CONCLUSION:</h3>
+                    <p>The key-subordinate S-boxes are intended to be safe against the two major assaults of the mid 1990s(differential cryptanalysis and straight cryptanalysis) and safe against whatever obscure assaults come straightaway. </p>
+                    <p>Key-subordinate S-boxes were not chosen haphazardly, as they were in Blowfish. All things being equal, we painstakingly planned S-box development manages, and tried them with all conceivable 128-cycle keys (and a subset of conceivable longer keys) to ensure that all the S-boxes were in fact solid. This methodology permitted to join the strength of fixed, solid S-boxes with the strength of mystery S-boxes. </p>
+                    <p>Furthermore, Twofish has no frail keys, as Blowfish does in diminished round variations.</p>
+                   <p>The MDS grid was painstakingly picked to give great dissemination, to hold its MDS property even get-togethers 1-bit revolution, and to be quick in both equipment and programming. </p>
+                   <p>The PHT and key expansion give dissemination between the subblocks and the key. Also, utilizing the LEA guidance on the Pentium (or more), we can do every one of the four augmentations in only two activities. </p>
+                   <p>The round subkeys are painstakingly determined, utilizing an instrument like the S-box development rules, to forestall related-key assaults and to give great key blending. </p>
+                   <p>The 1-digit turn is intended to separate the byte structure; without it, everything works on bytes.</p>
+                    
+                </div>
+            </div>
+            <!-- main content ends -->
+        </div>
+    </div>
+    <footer class="foot">
+        <ul>
+            <li><a href="home2.html">Home</a></li>
+            <li><a href="AES.html">Learn Algorithm</a></li>
+           <!---<li><a href="#">About</a></li>
+            <li><a href="#">Blog</a></li>--> 
+        </ul>
+        <p class="footend">LearnEncryption &copy; 2021 </p>
+      </footer> 
+      <script src="home.js"></script>
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="types of encryption algorithms. Tagged with encryption, algorithms, programming, career.">
+    <meta name="keywords"
+        content=" AES, encryption, algorithms, programming, career, software, coding, development, engineering, inclusive, community">
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Types of Algorithms" />
+    <title>Learn Encryption</title>
+    <link rel="short icon" href="youthedesigner.ico">
+    <link rel="stylesheet" href="InternTempCSSv2.css">
+    <link rel="stylesheet" href="responsive1.css">
+    <link rel="stylesheet" href="home.css">
+
+    <script>
+        function openNav() {
+            // document.getElementById("sidenav").style.display = 'flex';
+            document.getElementById("dsply").style.width = "71vw";
+            document.getElementById("imga").style.width = "79vw";
+            document.getElementById("sidenav").style.width = '19vw';
+        }
+        function closeNav() {
+            // document.getElementById("sidenav").style.display = 'none';
+            document.getElementById("sidenav").style.width = '0';
+            document.getElementById("dsply").style.width = "91vw";
+            document.getElementById("imga").style.width = "98vw";
+        }
+        function navButn()
+        {
+            if(document.getElementById("dsply").style.width ==="71vw")
+            {
+                console.log("if");
+                closeNav();
+                document.getElementById("navbutton").innerHTML = "&equals;";
+            }
+            else if(document.getElementById("dsply").style.width === "91vw")
+            {
+                console.log("else if");
+                openNav();
+                document.getElementById("navbutton").innerHTML = "&times;";
+            }
+            else{
+            console.log("error")
+            openNav();
+            document.getElementById("navbutton").innerHTML = "&times";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+            <!-- colleagues top navbar -->
+                  <nav id="navv" class="navigation h-nav" style="height:10vh">
+                      <div class="logo nav-logo v-class">
+                          <img class="logoimg" src="youthedesigner.png" alt="">
+                      </div>
+                    <ul class="nav-list v-class">
+                      <li><a href="home2.html">Home</a></li>
+                      <li><a href="AES.html">Learn Algorithm</a></li>
+                    <!--  <li><a href="about">About</a></li>
+                      <li><a href="#">Blog</a></li>-->
+                    </ul>
+                    <div class="burger" onclick="menuu()">
+                      <div class="line"></div>
+                      <div class="line"></div>
+                      <div class="line"></div>
+                    </div>
+                  </nav>
+            <!-- my placeholder top navbar -->
+          
+                  <!-- <div class="navbar">
+                      <ul>
+                          <li>ICON</li>
+                          <li>HOME</li>
+                          <li>ABOUT</li>
+                          <li>CONTACT</li>
+                      </ul>
+                  </div> -->
+        <!-- second nav bar starts -->
+        <div class="nav">
+            <div class="drop">
+                <!-- dropdown menu for mobile site -->
+                <li id="btn" class="dropbtn">ENCYRPTION TECHNIQUES <i class="arrow"></i>
+                    <div class="dropcontent">
+                        <a href="AES.html">AES</a>
+                        <a href="FPE.html">FPE</a>
+                        <a href="DesTdes.html">DES/TDES</a>
+                        <a href="Blowfish.html">BLOWFISH</a>
+                        <a href="Twofish.html">TWOFISH</a>
+                        <a href="RSA.html">RSA</a>
+                        <a href="SHA.html">SHA</a>
+                    </div>
+                </li>
+                <!-- dropdown ends -->
+            </div>
+            <ul style=" list-style-type: none;">
+                <li id="navbutton" onclick="navButn()">&equals;</li>
+                <a href="AES.html"><li>AES</li></a>
+                <a href="FPE.html"><li>FPE</li></a>
+                <a href="DesTdes.html"><li>DES/TDES</li></a>
+                <a href="Blowfish.html"><li>BLOWFISH</li></a>
+                <a href="Twofish.html"><li>TWOFISH</li></a>
+                <a href="RSA.html"><li>RSA</li></a>
+                <a href="sha.html"><li>SHA</li></a>
+            </ul>
+        </div>
+    </header>
+
+    <div>
+        <div class="container">
+            <!-- side navigator -->
+            <div class="navtab" id="sidenav">
+                <div class="head">
+                    <h2 id="closenav" onclick="closeNav()">F P E</h2>
+                </div>
+                <ul style=" list-style-type: none; padding-top: 2vh;">
+                    <li><a href="#1">Discription of FPE</a></li>
+                    <li><a href="#2">Working of FPE</a></li>
+                    <li><a href="#3">Algorithm of FPE</a></li>
+                    <li><a href="#top">BACK TO TOP</a></li>
+                </ul>
+
+            </div>
+            <!-- side navigator ends -->
+            <!-- main content starts -->
+            <div class="area">
+                <div class="heading" id="imga">
+                    <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Floating Point Exception (FPE)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
+                </div>
+                <div class="content" id="dsply">
+                    <h3 id="1">Description:-</h3>
+                    <p>Regularly confined courses of action of characters are utilized; numeric, alphabetic or alphanumeric. For instance: </p>
+                    <p>The FPE modes constrained by SP 800-38G have an interesting and strong property: Any blended attributes (ciphertexts) that are made utilizing them look a ton of like the relating decoded (plaintext) respect. So a 16-digit charge card number will get encoded to another 16-digit respect, a nine-digit Social Security number will get blended to another nine-digit respect, etc.etc</p>
+                    <p>Encoding an English word so that the ciphertext is another English word.</p>
+                    <p>Scrambling a n-digit number so that the ciphertext is another n-bit number (this is the meaning of a n-cycle block figure).</p>
+                    <p>For such confined areas, and for the clarifications behind the conversation under, the code is basically indistinguishable from a period of N whole numbers {0, ... , N−1} where N is the size of the space. </p>
+                    </ul>
+                    <h2>Benefits:-</h2>
+                    <ul class="ConList">
+                        <li>FPE modes work with the retrofitting of encryption progression to existing gadgets or programming, where a standard encryption mode probably </li>
+                        <li>won't be possible. Specifically, enlightening assortment applications may not help changes to the length or plan of information fields. </li>
+                        <li>This is the clarification FPE is all around used to ensure delicate instructive documents, for example, parcel card information, record subtleties, Social Security Numbers and truly indisputable data (PII), that are dealt with and saved in retail, clinical thought and monetary enlightening assortments and applications. </li>
+                        <li>Significantly more for the most part, FPE can keep up with the "disinfection" of enlightening assortments, the use of encryption to in a little while indisputable data (PII), like SSNs. The blended SSNs could in any case fill in as a report to work with quantifiable evaluation, even across different enlightening records. This gathers an immense heap of treatment of FPE-encoded information can be performed with the information in its got state.</li>
+                    </ul> 
+                    <h2 id="4">Algorithm:-</h2>
+                    <h3> The FPE enhancements of Black and Rogaway:-</h3>
+                    <p id="5"> Executing FPE with security evidently identified with that of the mysterious square code was first tried in a paper by cryptographers John Black and Phillip Rogaway,[1] which depicted three particular ways to deal with do this. They showed that these procedures is basically pretty much as secure as the square code that is utilized to collect it.</p>
+                    <p>This gathers that tolerating the AES calculation is utilized to make a FPE assessment, the subsequent FPE calculation is basically pretty much as secure as AES on the grounds that an enemy ready for overcoming the FPE calculation can also pound the AES assessment. In this manner, in case AES is secure, the FPE calculations worked from it are additionally secure. In the total of the going with, E implies the AES encryption development that is utilized to gather a FPE assessment and F shows the FPE encryption activity.</p>
+                    <h3>FPE from a prefix figure :-</h3>   
+                    <p>One clear approach to manage make a FPE calculation on {0, ..., N-1} is to disperse a pseudorandom weight to each number, then, at that point, sort by weight. The loads are depicted by applying a current square code to every whole number. Dull and Rogaway consider this strategy a "prefix figure" and showed it was obviously practically as mind boggling as the square code utilized.</p>
+                    <p>Hence, to make a FPE on the space {0,1,2,3}, given a key K apply AES(K) to every whole number, giving, for instance,<br>
+                        weight(0) = 0x56c644080098fc5570f2b329323dbf62 <br>
+                        weight(1) = 0x08ee98c0d05e3dad3eb3d6236f23e7b7 <br>
+                        weight(2) = 0x47d2e1bf72264fa01fb274465e56ba20 <br>
+                        weight(3) = 0x077de40941c93774857961a8a772650d <br>
+                    </p>
+                    <p>Sorting out [0,1,2,3] by weight gives [3,1,2,0], so the code is <br>
+                        F(0) = 3 <br>
+                        F(1) = 1 <br>
+                        F(2) = 2 <br>
+                        F(3) = 0 <br>
+                        This technique is just helpful for minimal possible increases of N. For more prominent qualities, the size of the inquiry table and the significant number of encryptions to introduce the table is excessively gigantic to at any point be prudent. 
+                    </p>
+                    <h3>FPE from cycle strolling :-</h3>
+                    <p>In case there is a set M of permitted values inside the space of a pseudorandom change P (for instance P can be a square code like AES), a FPE calculation can be created utilizing the square code by over and over applying the square code until the outcome is one of the permitted values (inside M).</p>
+                    <p>CycleWalkingFPE(x) <br> 
+                        { <br>  
+                        if P(x) is an element of M then <br> 
+                            return P(x) <br> 
+                        else <br> 
+                            return CycleWalkingFPE(P(x)) <br> 
+                    } <br> 
+                    </p>
+                </div>
+            </div>
+            <!-- main content ends -->
+        </div>
+    </div>
+    <footer class="foot">
+        <ul>
+            <li><a href="home2.html">Home</a></li>
+            <li><a href="AES.html">Learn Algorithm</a></li>
+           <!---<li><a href="#">About</a></li>
+            <li><a href="#">Blog</a></li>--> 
+        </ul>
+        <p class="footend">LearnEncryption &copy; 2021 </p>
+      </footer> 
+      <script src="home.js"></script>
+</body>
+</html>

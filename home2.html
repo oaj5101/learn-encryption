@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <title>Learn Encryption</title>
+    <link rel="short icon" href="youthedesigner.ico">
+    
+</head>
+<header>
+    <nav id="navv" class="navigation h-nav" style="height:10vh">
+        <div class="logo nav-logo v-class">
+            <img class="logoimg" src="youthedesigner.png" alt="">
+        </div>
+      <ul class="nav-list v-class">
+        <li><a href="home2.html">Home</a></li>
+        <li><a href="AES.html">Learn Algorithm</a></li>
+        <!--<li><a href="abut.html">About</a></li>
+        <li><a href="#">Blog</a></li>-->
+      </ul>
+      <div class="burger" onclick="menuu()">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </nav>
+</header>
+<body>
+    <div class="conta">
+      <div class="head">
+        <h2>Systems to Implement Different Encryption Techniques</h2>
+    </div>
+
+      <div id="main-container">
+        <div class="card-container">
+            <div id="image">
+            <img class="photo" src="Cryptography.png" alt=""></div>
+            <div class="info">
+                <h1 id="heading">What is cryptography?</h1>
+                <p id="text">Encryption is the method by which information is converted into secret code that hides the information's true meaning. The science of encrypting and decrypting information is called cryptography. The word cryptography is derived from prefix "crypt" which means hidden or vault and suffix "graphy" stands for writing. 
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="carda-container">
+      <div id="imagea">
+          <img class="photoa" src="basics of encryption.jpeg" alt=""></div>
+      <div class="info">
+          <h1 id="headinga">The various components of a basic cryptosystem are as follows:</h1>
+          <p id="texta"> <p><b>Plaintext:</b> It is the data to be protected during transmission.</p><br>
+          <p><b>Encryption Algorithm:</b> It is a mathematical process that produces a ciphertext for any given plaintext and encryption key. It is a cryptographic algorithm that takes plaintext and an encryption key as input and produces a ciphertext.
+          OR
+          Encryption is the process of encoding an information in such a way that only authorized parties can access it. It is critically important because it allows you to securely protect data that you don't want anyone to see or access.</p><br>
+          <p><b>Ciphertext:</b>  It is the scrambled version of the plaintext produced by the encryption algorithm using a specific encryption key. The ciphertext is not guarded. It flows on public channels. It can be intercepted or compromised by anyone who has access to the communication channel.</p><br>
+          <p><b>Decryption Algorithm:</b>  It is a mathematical process that produces a unique plaintext for any given ciphertext and decryption key. It is a cryptographic algorithm that takes a ciphertext and a decryption key as input, and outputs a plaintext. The decryption algorithm essentially reverses the encryption algorithm and is thus closely related to it.</p><br>
+          <p><b>Encryption Key:</b> It is a value that is known to the sender. The sender inputs the encryption key into the encryption algorithm along with the plaintext in order to compute the ciphertext.</p><br>
+          <p><b>Decryption Key:</b> It is a value that is known to the receiver. The decryption key is related to the encryption key, but is not always identical to it. The receiver inputs the decryption key into the decryption algorithm along with the ciphertext in order to compute the plaintext.</p><br>
+          </p>
+      </div>
+  </div>
+</div>
+
+    <!--<div id="main-container">-->
+        <div class="card1-container">
+            <div id="first-image">
+            <img class="photo1" src="symmetric.png" alt=""></div>
+            <div class="info">
+                <h1 id="heading1">Symmetric Key Encryption</h1>
+                <p id="text1">The encryption process where the same keys are used for encrypting and decrypting the information is known as Symmetric Key Encryption. In a group of n people, to enable two-party communication between any two persons, the number of keys required for the group is n × (n – 1)/2.
+                </p>
+            </div>
+        </div>
+    <!--</div>-->
+        <div class="card2-container">
+            <div id="second-image">
+                <img class="photo2" src="asymmetric2.png" alt=""></div>
+            <div class="info">
+                <h1 id="heading2">Asymmetric Key Encryption</h1>
+                <p id="text2">The encryption process where different keys are used for encrypting and decrypting the information is known as Asymmetric Key Encryption. Though the keys are different, they are mathematically related and hence, retrieving the plaintext by decrypting ciphertext is feasible.
+                </p>
+            </div>
+        </div>
+    </div>
+        <div class="card3-container">
+            <div id="third-image">
+            <img class="photo3" src="block2.png" alt=""></div>
+            <div class="info">
+                <h1 id="heading3">Block Cipher</h1>
+                <p id="text3">In this scheme, the plain binary text is processed in blocks (groups) of bits at a time; i.e. a block of plaintext bits is selected, a series of operations is performed on this block to generate a block of ciphertext bits. The number of bits in a block is fixed.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="card4-container">
+        <div id="fourth-image">
+            <img class="photo4" src="stream.png" alt=""></div>
+        <div class="info">
+            <h1 id="heading4">Stream Cipher</h1>
+            <p id="text4">The plaintext is processed one bit at a time i.e. one bit of plaintext is taken, and a series of operations is performed on it to generate one bit of ciphertext. Technically, stream ciphers are block ciphers with a block size of one bit.
+            </p>
+        </div>
+    </div>
+</div>
+  <footer class="foot">
+    <ul>
+        <li><a href="home2.html">Home</a></li>
+        <li><a href="AES.html">Learn Algorithm</a></li>
+      <!-- <li><a href="#">About</a></li>
+        <li><a href="#">Blog</a></li>-->
+    </ul>
+    <!-- <div class="lin">
+      <ul>
+        <li><a href="#">LearnEncryption.com</a></li>
+      </ul>
+    </div> -->
+    <p class="footend">LearnEncryption &copy; 2021 </p>
+  </footer> 
+  <script src="home.js"></script> 
+</body>
+</html>
